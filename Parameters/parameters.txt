@@ -1,0 +1,17 @@
+
+maxSittingMinutes  | flutter_app/lib/screens/live_screen.dart (_LiveScreenState) | Minutes of continuous sitting before showing "Time to Move" alert.
+signalTimeoutSeconds | flutter_app/lib/screens/live_screen.dart (_LiveScreenState) | If no ESP32 signal received for this many seconds, chair is considered OFF.
+
+defaultUserId  | flutter_app/lib/state/active_user.dart (ActiveUser) | Default selected userId when the app starts (before choosing a different user).
+defaultMuted  | flutter_app/lib/state/active_user.dart (ActiveUser) | Default alert mute state when the app starts (false = alerts active).
+
+N_SAMPLES_AVG | code\arduino_code\chair_training.ino | Number of samples averaged per capture.
+SAMPLE_DELAY_MS  | code\arduino_code\chair_training.ino | Delay between samples during averaging.
+
+N_SAMPLES_AVG  | code\arduino_code\chair_predict.ino | Number of samples averaged per prediction cycle (higher = smoother but slower reaction).
+SAMPLE_DELAY_MS | code\arduino_code\chair_predict.ino | Delay between samples during averaging (controls prediction update rate).
+LIVE_PERIOD_MS  | code\arduino_code\chair_predict.ino | Send prediction to Firebase at least once every this many ms (periodic keep-alive).
+HISTORY_MIN_INTERVAL_MS | code\arduino_code\chair_predict.ino | Minimum interval between history writes unless prediction changed.
+GYRO_DEV_TH_AVG | code\arduino_code\chair_predict.ino | Motion gate threshold on average gyro deviation from baseline.
+GYRO_DEV_TH_MAX | code\arduino_code\chair_predict.ino | Motion gate threshold on max gyro deviation from baseline.
+KNN_K | code\arduino_code\chair_predict.ino (predictKNN) | K value for KNN voting.

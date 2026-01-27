@@ -13,7 +13,7 @@ class LiveScreen extends StatefulWidget {
 
 class _LiveScreenState extends State<LiveScreen> {
   // --- CONFIG ---
-  static const int maxSittingMinutes = 1;
+  static const int maxSittingMinutes = 60;
   static const int signalTimeoutSeconds = 15; 
 
   // --- UI STATE ---

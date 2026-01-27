@@ -22,14 +22,14 @@
 #include "addons/RTDBHelper.h"
 
 // ---------- WiFi ----------
-#define WIFI_SSID "tala"
-#define WIFI_PASSWORD "12345678"
+#define WIFI_SSID ""
+#define WIFI_PASSWORD ""
 
 // ---------- Firebase ----------
-#define API_KEY "AIzaSyCwIoxjA4IusI_kHiSFg7epMhoR-jzET3Y"
-#define DATABASE_URL "https://smart-chair-ee4e3-default-rtdb.europe-west1.firebasedatabase.app/"
-#define USER_EMAIL "chair@chair.com"
-#define USER_PASSWORD "12345678"
+#define API_KEY ""
+#define DATABASE_URL ""
+#define USER_EMAIL ""
+#define USER_PASSWORD ""
 
 FirebaseData fbdo;
 FirebaseAuth auth;
